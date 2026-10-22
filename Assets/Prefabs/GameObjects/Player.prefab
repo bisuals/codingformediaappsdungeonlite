@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0131f91902bee04db3697c3310bf9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  baseMaxHealth: 10
   maxHealth: 3
   currentHealth: 0
   gameOverPanel: {fileID: 0}
