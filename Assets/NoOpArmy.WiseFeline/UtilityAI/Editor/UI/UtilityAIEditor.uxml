@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NoOpArmy.WiseFeline/UtilityAI/Editor/UI/UtilityAIEditor.uss?fileID=7433441132597879392&amp;guid=c1a025f767b68b74eae345bfaa096fcc&amp;type=3#UtilityAIEditor" />
+    <Style src="project://database/Assets/NoOpArmy.WiseFeline/UtilityAI/Editor/UI/FieldView.uss?fileID=7433441132597879392&amp;guid=44f0bae86d1b4ad4aac2e346a3aadaf8&amp;type=3#FieldView" />
+    <NoOpArmy.WiseFeline.BehaviorView class="wf-root">
+        <uie:Toolbar>
+            <ui:Label name="title" text="None" display-tooltip-when-elided="false" class="wf-title" />
+            <uie:ToolbarToggle name="sort-toggle" label="Sort Actions" focusable="false" tooltip="Sort the actions by score while the game runs." class="wf-toolbar-toggle is-hidden" />
+            <uie:ToolbarToggle name="freeze-toggle" label="Freeze" focusable="false" tooltip="Stop applying score updates so the current values can be read." class="wf-toolbar-toggle is-hidden" />
+            <uie:ToolbarSpacer name="spacer" class="wf-toolbar-spacer" />
+            <uie:ToolbarButton name="documentation" text="Documentation" />
+            <uie:ToolbarButton name="discord" text="Discord" />
+            <uie:ToolbarButton name="about" text="About" />
+        </uie:Toolbar>
+        <ui:VisualElement name="content-area" class="content-area">
+            <ui:TwoPaneSplitView name="main-split" fixed-pane-initial-dimension="340" view-data-key="wisefeline-main-split" class="wf-split">
+                <ui:TwoPaneSplitView name="sets-actions-split" fixed-pane-initial-dimension="130" view-data-key="wisefeline-sets-actions-split" class="wf-split wf-split--left">
+                    <ui:VisualElement name="actionsets-parent" class="wf-column wf-column--sets">
+                        <ui:Label text="Action Sets" class="column-header" />
+                        <ui:VisualElement name="actionset-area" class="list-area">
+                            <ui:ScrollView name="actionset-container" mode="Vertical" view-data-key="wisefeline-actionset-scroll" class="row-list" />
+                            <ui:Label name="actionset-hint" picking-mode="Ignore" class="column-hint" />
+                        </ui:VisualElement>
+                        <ui:Button name="add-actionset" text="Add Action Set" class="add-button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="actions-parent" class="wf-column wf-column--actions">
+                        <ui:Label text="Actions" class="column-header" />
+                        <ui:VisualElement name="action-area" class="list-area">
+                            <ui:ScrollView name="actions-container" mode="Vertical" view-data-key="wisefeline-action-scroll" class="row-list" />
+                            <ui:Label name="action-hint" picking-mode="Ignore" class="column-hint" />
+                        </ui:VisualElement>
+                        <ui:Button name="add-action" text="Add Action" class="add-button" />
+                    </ui:VisualElement>
+                </ui:TwoPaneSplitView>
+                <ui:TwoPaneSplitView name="cons-inspector-split" fixed-pane-initial-dimension="200" view-data-key="wisefeline-cons-inspector-split" class="wf-split wf-split--right">
+                    <ui:VisualElement name="considerations-parent" class="wf-column wf-column--considerations">
+                        <ui:Label text="Considerations" class="column-header" />
+                        <ui:VisualElement name="consideration-area" class="list-area">
+                            <ui:ScrollView name="consideration-container" mode="Vertical" view-data-key="wisefeline-consideration-scroll" class="row-list" />
+                            <ui:Label name="consideration-hint" picking-mode="Ignore" class="column-hint" />
+                        </ui:VisualElement>
+                        <ui:Button name="add-consideration" text="Add Consideration" class="add-button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="inspector-parent" class="wf-column wf-column--inspector">
+                        <ui:Label text="Properties" class="column-header" />
+                        <ui:ScrollView name="inspector-scroll" mode="Vertical" view-data-key="wisefeline-inspector-scroll" class="inspector-scroll">
+                            <NoOpArmy.WiseFeline.InspectorView name="inspector" class="inspector-view" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                </ui:TwoPaneSplitView>
+            </ui:TwoPaneSplitView>
+            <ui:Label name="empty-state" class="empty-state is-hidden" />
+        </ui:VisualElement>
+    </NoOpArmy.WiseFeline.BehaviorView>
+</ui:UXML>

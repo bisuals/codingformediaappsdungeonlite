@@ -1,0 +1,1163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8638539618105198589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4830e61f8f4c2b4a9d5381f325cd791, type: 3}
+  m_Name: BlackboardActionBase
+  m_EditorClassIdentifier: 
+  guid: b3aabf83072b09843b8f08d5a0e17363
+  Name: SleepAction
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 661671450203055831}
+  - {fileID: 7034074800605871001}
+  changerStartingDelayInSeconds: 1
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Energy
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0.05
+      minFloatValue: 0
+      maxFloatValue: 1
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+--- !u!114 &-8123612051908353070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: MoveToGameObjectAction
+  m_EditorClassIdentifier: 
+  guid: 2f2aba70d41498e4eae6215c3245780f
+  Name: MoveToWC
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 2136625628964223355}
+  - {fileID: 8630591445370452566}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  gameObjectKeyName: WC
+--- !u!114 &-7673983140450686956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: c4d395a7254ab0b4f97851a7dd9049bd
+  Name: BladderFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Bladder
+--- !u!114 &-6307228540924018534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: MoveToGameObjectAction
+  m_EditorClassIdentifier: 
+  guid: 60a21f4e1d70c83479185de57df8c6c0
+  Name: MoveToRefrigerator
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: -934325775671029017}
+  - {fileID: 3904818839701651249}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  gameObjectKeyName: Refrigerator
+--- !u!114 &-5730810522074626371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: dee8cd7219a85cf46a0ae107be323bb7
+  Name: HungerFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Hunger
+--- !u!114 &-2957034831683879022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: b36d5ce4aee47f74ca22532f80428a97
+  Name: RefrigeratorDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0.4
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.016688729
+      outSlope: -0.016688729
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09887838
+    - serializedVersion: 3
+      time: 1
+      value: 0.0973587
+      inSlope: -2.1444342
+      outSlope: -2.1444342
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.021546781
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Refrigerator
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &-934325775671029017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: a77a8aab9ba499c47b61cbbed26323da
+  Name: HungerFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.20037842
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.85365677
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Hunger
+--- !u!114 &-386266031942885263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4830e61f8f4c2b4a9d5381f325cd791, type: 3}
+  m_Name: BlackboardActionBase
+  m_EditorClassIdentifier: 
+  guid: cb06ed2da3657ed4aaa63875402e5935
+  Name: PeeAction
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: -7673983140450686956}
+  - {fileID: 6137561393404115050}
+  changerStartingDelayInSeconds: 1
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Bladder
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0.5
+      minFloatValue: 0
+      maxFloatValue: 1
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee64cb2d03269334c8600221a75bfdbc, type: 3}
+  m_Name: LightDemoAgent
+  m_EditorClassIdentifier: 
+  _actionSets:
+  - {fileID: 5038401535521703179}
+  SelectedActionSet: {fileID: 0}
+  SelectedAction: {fileID: 0}
+--- !u!114 &38452260313381799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: bf426fd49dcdfff4fbd23352d14d9c44
+  Name: EntertainmentFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.00073956023
+      value: 0.20794678
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Entertainment
+--- !u!114 &380741358564464097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: 8a8a07fb68e546742a0734b8cb5b837a
+  Name: TvDistanceConsideration
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 10
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.19730759
+      inSlope: -0.08711919
+      outSlope: -0.08711919
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.102567874
+    - serializedVersion: 3
+      time: 0.101862654
+      value: 0.7955125
+      inSlope: -0.03512329
+      outSlope: -0.03512329
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.19584274
+      inSlope: -2.6699133
+      outSlope: -2.6699133
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.02007097
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: TV
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &661671450203055831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: 4632f152cc3f51f4e9744e46b5c78b26
+  Name: EnergyFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.06985235
+      outSlope: -0.06985235
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.034683686
+    - serializedVersion: 3
+      time: 1
+      value: 1.0075722
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Energy
+--- !u!114 &2136625628964223355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: b15a147cfc88e3d4a9a994119f3204a5
+  Name: BladderFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2033081
+      inSlope: 0.47992557
+      outSlope: 0.47992557
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.15728506
+    - serializedVersion: 3
+      time: 0.5070817
+      value: 0.5106219
+      inSlope: 2.064861
+      outSlope: 2.064861
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.056289636
+      outWeight: 0.08911089
+    - serializedVersion: 3
+      time: 1
+      value: 0.8991966
+      inSlope: 0.06590603
+      outSlope: 0.06590603
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.17538328
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Bladder
+--- !u!114 &2693545055141005692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: a833a09575eb557479ecb4076a316baa
+  Name: TvDistanceConsideration
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0.2
+  maxRange: 0.7
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.016688729
+      outSlope: -0.016688729
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09887838
+    - serializedVersion: 3
+      time: 1
+      value: 0.0973587
+      inSlope: -2.1444342
+      outSlope: -2.1444342
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.021546781
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: TV
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &3750281187642612320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4830e61f8f4c2b4a9d5381f325cd791, type: 3}
+  m_Name: BlackboardActionBase
+  m_EditorClassIdentifier: 
+  guid: 2e48dfdf7fcda5d4eb342d6f9fee200f
+  Name: EntertainmentAction
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 38452260313381799}
+  - {fileID: 2693545055141005692}
+  changerStartingDelayInSeconds: 1
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Entertainment
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0.1
+      minFloatValue: 0
+      maxFloatValue: 1
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+--- !u!114 &3866605950103725707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4830e61f8f4c2b4a9d5381f325cd791, type: 3}
+  m_Name: BlackboardActionBase
+  m_EditorClassIdentifier: 
+  guid: af7ee9404cf67364284c6fffdfb9d28c
+  Name: EatAction
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: -2957034831683879022}
+  - {fileID: -5730810522074626371}
+  changerStartingDelayInSeconds: 1
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Hunger
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0.1
+      minFloatValue: 0
+      maxFloatValue: 1
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+--- !u!114 &3904818839701651249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: e25d12a5dc92da340bb4ce351c01c359
+  Name: RefrigeratorDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 10
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.19730759
+      inSlope: -0.08711919
+      outSlope: -0.08711919
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.102567874
+    - serializedVersion: 3
+      time: 0.101862654
+      value: 0.7955125
+      inSlope: -0.03512329
+      outSlope: -0.03512329
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.19584274
+      inSlope: -2.6699133
+      outSlope: -2.6699133
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.02007097
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Refrigerator
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &5038401535521703179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd81621ece8e8c345864b079264166e1, type: 3}
+  m_Name: New Action Set
+  m_EditorClassIdentifier: 
+  guid: 3b5ca0ae263de1249baaed6c0a6a8294
+  Name: What To Do?
+  Behavior: {fileID: 11400000}
+  _actions:
+  - {fileID: 8701260786837307597}
+  - {fileID: -6307228540924018534}
+  - {fileID: -8123612051908353070}
+  - {fileID: 5494544329628288427}
+  - {fileID: 3866605950103725707}
+  - {fileID: -386266031942885263}
+  - {fileID: -8638539618105198589}
+  - {fileID: 3750281187642612320}
+--- !u!114 &5494544329628288427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: MoveToGameObjectAction
+  m_EditorClassIdentifier: 
+  guid: cd9bc6766ab34e44ea89b15ee94e6f9c
+  Name: MoveToTV
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 7539465909951899127}
+  - {fileID: 380741358564464097}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  gameObjectKeyName: TV
+--- !u!114 &6020254753180883175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: 5302e7e33c4534849a46fe2cc4cc02f6
+  Name: BedDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 10
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.20208049
+      inSlope: 0.018792568
+      outSlope: 0.018792568
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.079146266
+    - serializedVersion: 3
+      time: 0.1506837
+      value: 0.7987174
+      inSlope: -0.15397808
+      outSlope: -0.15397808
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.20285034
+      inSlope: -1.604519
+      outSlope: -1.604519
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.03214036
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Bed
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &6137561393404115050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: 0ebece23d64e89e4e8ae561586efe292
+  Name: WCDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0.2
+  maxRange: 0.8
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0007362366
+      value: 1
+      inSlope: 0.027271904
+      outSlope: 0.027271904
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.1816584
+    - serializedVersion: 3
+      time: 1
+      value: 0.06435776
+      inSlope: -2.5695918
+      outSlope: -2.5695918
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.023778005
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: WC
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &7034074800605871001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: b5de10dbe7448a7458e478d5ac9f5454
+  Name: BedDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0.4
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.016688729
+      outSlope: -0.016688729
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09887838
+    - serializedVersion: 3
+      time: 1
+      value: 0.0973587
+      inSlope: -2.1444342
+      outSlope: -2.1444342
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.021546781
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Bed
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &7539465909951899127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: c260b14d7b8c3534cb7b0464fada4f2e
+  Name: EntertainmentFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2020874
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.0014038
+      value: 0.8004837
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Entertainment
+--- !u!114 &8630591445370452566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: BlackboardGameObjectDistanceConsideration
+  m_EditorClassIdentifier: 
+  guid: 0e358b11531f56d48b7a874747676df7
+  Name: WCDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 10
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0007362366
+      value: 0.2947998
+      inSlope: -0.033133607
+      outSlope: -0.033133607
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.039139092
+    - serializedVersion: 3
+      time: 0.15231147
+      value: 0.99269086
+      inSlope: -0.0813262
+      outSlope: -0.0813262
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.99780273
+      value: 0.20583344
+      inSlope: -2.3390694
+      outSlope: -2.3390694
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.02236663
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: WC
+  calculateOnXZPlane: 1
+  inverse: 0
+--- !u!114 &8701260786837307597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: MoveToGameObjectAction
+  m_EditorClassIdentifier: 
+  guid: 5263bc854936d36418d0816bacafdc13
+  Name: MoveToBed
+  _priority: 0
+  _isInterruptable: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 8941575357151396735}
+  - {fileID: 6020254753180883175}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: 2147483647
+      maxIntValue: -2147483648
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  gameObjectKeyName: Bed
+--- !u!114 &8941575357151396735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: BlackboardFloatConsideration
+  m_EditorClassIdentifier: 
+  guid: 408adf0dd69dadd46a435e594dddc9c6
+  Name: EnergyFloat
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.29797363
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.99997056
+      value: 0.80975723
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Energy

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c035ec0f21742054e9e1ad79c22086ae
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/UtilityAI/ActionAndConsiderationLibrary/Considerations/BlackboardFloatConsideration.cs
+  uploadId: 1017588

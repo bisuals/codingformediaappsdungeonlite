@@ -1,0 +1,16 @@
+{
+    "name": "NoOpArmy.WiseFeline.CombatQuickstart",
+    "rootNamespace": "NoOpArmy.WiseFeline.CombatQuickstart",
+    "references": [
+        "NoOpArmy.WiseFeline.BlackBoards"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

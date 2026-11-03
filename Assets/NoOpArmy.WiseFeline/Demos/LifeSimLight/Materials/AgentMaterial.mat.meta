@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f021e9b981d30df44ae9359e19666215
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/LifeSimLight/Materials/AgentMaterial.mat
+  uploadId: 1017588

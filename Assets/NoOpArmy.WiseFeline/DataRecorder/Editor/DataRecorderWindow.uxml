@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <uie:Toolbar>
+        <uie:ToolbarToggle label="Record Data" tooltip="Toggles recording data on and off. when off, this tool takes less CPU time to run and its memory usage does not grow." />
+    </uie:Toolbar>
+    <ui:VisualElement name="HorizontalVisualElement" style="flex-grow: 1; flex-direction: row; align-self: center; min-width: 400px; min-height: 400px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; align-items: flex-start; justify-content: space-between;">
+        <ui:VisualElement name="ObjectsRoot" style="flex-grow: 1; flex-shrink: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+            <ui:Label tabindex="-1" text="Game Objects&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:ScrollView name="ScrollView" mode="VerticalAndHorizontal" view-data-key="k1">
+                <ui:ListView name="Objects" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="FramesRoot" style="flex-grow: 0.3; flex-shrink: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <ui:Label tabindex="-1" text="Frames" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:ScrollView mode="VerticalAndHorizontal" view-data-key="k2">
+                <ui:ListView name="Frames" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="DetailsRoot" style="flex-grow: 1; flex-shrink: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+            <ui:Label tabindex="-1" text="Data&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" view-data-key="k3" />
+            <ui:ScrollView mode="VerticalAndHorizontal">
+                <ui:TreeView name="Details" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

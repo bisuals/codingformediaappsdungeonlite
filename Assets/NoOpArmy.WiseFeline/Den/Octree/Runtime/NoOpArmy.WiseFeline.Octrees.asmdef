@@ -1,0 +1,16 @@
+{
+    "name": "NoOpArmy.WiseFeline.Octrees",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a0f74ae21fd0fc34fb838e084e6b7fef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b0f05b1bddb9885448c5c356e9739ab0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/LifeSimLight/Scene/LightDemo.unity
+  uploadId: 1017588

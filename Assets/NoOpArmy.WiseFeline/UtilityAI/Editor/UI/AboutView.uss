@@ -1,0 +1,53 @@
+/*
+    Styles for the About window. Spacing is done with margins instead of empty spacer elements, and
+    every color is a Unity theme variable so the window reads correctly on both editor skins.
+*/
+
+.about__body {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.about__title {
+    -unity-font-style: bold;
+    font-size: 14px;
+    color: var(--unity-colors-default-text);
+    margin-bottom: 8px;
+}
+
+.about__credit {
+    -unity-font-style: normal;
+    color: var(--unity-colors-default-text);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.about__thanks {
+    margin-top: 8px;
+    -unity-text-align: upper-center;
+}
+
+.about__link {
+    -unity-font-style: normal;
+    color: var(--unity-colors-link-text);
+    margin-top: 10px;
+    cursor: link;
+}
+
+.about__link:hover {
+    -unity-font-style: italic;
+}
+
+.about__ok {
+    align-self: center;
+    min-width: 90px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}

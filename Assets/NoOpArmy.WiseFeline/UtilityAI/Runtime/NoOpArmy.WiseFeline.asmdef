@@ -1,0 +1,17 @@
+{
+    "name": "NoOpArmy.WiseFeline",
+    "rootNamespace": "NoOpArmy.WiseFeline",
+    "references": [
+        "GUID:a51ea02277de3404894bb3ea683585a2",
+        "GUID:124f5b41c7dc0a24cb8e92499a7a0db7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

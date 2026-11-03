@@ -1,0 +1,16 @@
+{
+    "name": "NoOpArmy.WiseFeline.Blackboards.Demo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:66acc08d218ef33418d480c90d926a69"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

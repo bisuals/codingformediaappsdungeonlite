@@ -1,0 +1,19 @@
+{
+    "name": "NoOpArmy.WiseFeline.Extentions",
+    "rootNamespace": "",
+    "references": [
+        "GUID:124f5b41c7dc0a24cb8e92499a7a0db7",
+        "GUID:a0f74ae21fd0fc34fb838e084e6b7fef",
+        "GUID:66acc08d218ef33418d480c90d926a69",
+        "GUID:2a2c285e6eb5173469a9e20ce9f1f6ef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
