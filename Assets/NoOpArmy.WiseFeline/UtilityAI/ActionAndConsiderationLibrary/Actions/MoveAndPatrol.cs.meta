@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 36ec8bf328c4ff7428cedf8c5f3c8987
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/UtilityAI/ActionAndConsiderationLibrary/Actions/MoveAndPatrol.cs
+  uploadId: 1017588

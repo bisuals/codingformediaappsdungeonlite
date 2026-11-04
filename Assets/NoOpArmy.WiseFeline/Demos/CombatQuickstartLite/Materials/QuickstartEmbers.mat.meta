@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 339ff8bf156820946a3de80972fcb93a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartLite/Materials/QuickstartEmbers.mat
+  uploadId: 1017588

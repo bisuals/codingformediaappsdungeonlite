@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2c6db069512102e478829641c63f08a0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartLite/Prefabs/QuickstartPlayer.prefab
+  uploadId: 1017588

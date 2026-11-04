@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2a2c285e6eb5173469a9e20ce9f1f6ef
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Den/DenUtilityComponents/NoOpArmy.WiseFeline.Den.asmdef
+  uploadId: 1017588

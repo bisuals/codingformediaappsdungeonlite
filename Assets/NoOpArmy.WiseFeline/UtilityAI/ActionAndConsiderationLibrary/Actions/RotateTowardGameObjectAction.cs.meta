@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7d3fcb8759c314d499d4c841fd9aa300
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/UtilityAI/ActionAndConsiderationLibrary/Actions/RotateTowardGameObjectAction.cs
+  uploadId: 1017588

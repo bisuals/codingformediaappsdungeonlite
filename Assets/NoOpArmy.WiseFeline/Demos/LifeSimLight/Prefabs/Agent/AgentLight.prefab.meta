@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8340874c9353d3a4dbef1a2e79fa01c0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/LifeSimLight/Prefabs/Agent/AgentLight.prefab
+  uploadId: 1017588

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ba092c4c5e4fc424a8dd6254e1be33fc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartLite/Animation/QuickstartRest.anim
+  uploadId: 1017588

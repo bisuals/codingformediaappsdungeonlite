@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2a4a311f1a1902845bfded87545af856
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Den/Octree/Runtime/NoOpArmy.WiseFeline.Octrees.asmdef
+  uploadId: 1017588

@@ -1,0 +1,20 @@
+{
+    "name": "NoOpArmy.WiseFeline.DataRecorder.Editor",
+    "rootNamespace": "NoOpArmy.WiseFeline.DataRecorder.Editor",
+    "references": [
+        "GUID:a0f74ae21fd0fc34fb838e084e6b7fef",
+        "GUID:a51ea02277de3404894bb3ea683585a2",
+        "GUID:124f5b41c7dc0a24cb8e92499a7a0db7"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

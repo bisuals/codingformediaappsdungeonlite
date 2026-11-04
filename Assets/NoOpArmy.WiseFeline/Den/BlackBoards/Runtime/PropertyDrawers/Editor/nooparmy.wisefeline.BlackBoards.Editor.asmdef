@@ -1,0 +1,19 @@
+{
+    "name": "NoOpArmy.WiseFeline.BlackBoards.Editor",
+    "rootNamespace": "NoOpArmy.WiseFeline.BlackBoards.Editor",
+    "references": [
+        "GUID:a0f74ae21fd0fc34fb838e084e6b7fef",
+        "GUID:66acc08d218ef33418d480c90d926a69"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+{
+    "name": "NoOpArmy.WiseFeline.Editor",
+    "rootNamespace": "NoOpArmy.WiseFeline",
+    "references": [
+        "GUID:a0f74ae21fd0fc34fb838e084e6b7fef"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

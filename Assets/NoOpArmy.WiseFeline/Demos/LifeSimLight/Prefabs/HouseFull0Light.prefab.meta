@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 819f1aeb6d1c2fe429da4cc66082a90e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/LifeSimLight/Prefabs/HouseFull0Light.prefab
+  uploadId: 1017588

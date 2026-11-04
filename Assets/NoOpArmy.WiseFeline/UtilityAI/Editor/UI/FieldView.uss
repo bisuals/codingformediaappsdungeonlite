@@ -1,0 +1,167 @@
+/* One row of the Wise Feline window. The row element itself is the clickable, focusable and
+   draggable element, so every state below is a class on the row and not on a child button.
+   Colors come from the Unity theme variables so that the light and the dark editor skin both work.
+   The only exceptions are the running highlight and the drop line, which stay the same accent in
+   both skins and carry their own text color so they remain readable. */
+
+.is-hidden {
+    display: none;
+}
+
+.row {
+    height: 22px;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 2px;
+    border-left-width: 3px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-window-border);
+    color: var(--unity-colors-default-text);
+}
+
+.row:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.row:active {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+.row:focus {
+    border-bottom-color: var(--unity-colors-highlight-background);
+}
+
+.row--actionset {
+    border-left-color: rgb(110, 155, 105);
+}
+
+.row--action {
+    border-left-color: rgb(100, 140, 195);
+}
+
+.row--consideration {
+    border-left-color: rgb(150, 120, 180);
+}
+
+.row--selected {
+    background-color: var(--unity-colors-highlight-background);
+    color: var(--unity-colors-highlight-text);
+}
+
+.row--selected:hover {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.row--running {
+    background-color: rgb(230, 145, 15);
+    color: rgb(25, 25, 25);
+}
+
+.row--running:hover {
+    background-color: rgb(240, 160, 35);
+}
+
+.row--running.row--selected {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--unity-colors-highlight-background);
+}
+
+/* The score bar sits behind the labels. Its width is 100% and the code scales it on the x axis,
+   which is why the origin is pinned to the left edge. */
+.row__bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: 0% 50%;
+    background-color: rgba(70, 130, 190, 0.28);
+    display: none;
+}
+
+.play-mode .row__bar {
+    display: flex;
+}
+
+.row--running .row__bar {
+    background-color: rgba(120, 70, 0, 0.25);
+}
+
+.row__name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    -unity-text-align: middle-left;
+}
+
+.row__tag {
+    flex-shrink: 0;
+    margin-left: 4px;
+    font-size: 10px;
+    -unity-text-align: middle-right;
+    opacity: 0.75;
+}
+
+.row__score {
+    flex-shrink: 0;
+    width: 48px;
+    margin-left: 4px;
+    font-size: 11px;
+    -unity-text-align: middle-right;
+    display: none;
+}
+
+.play-mode .row__score {
+    display: flex;
+}
+
+.row__rename {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 1px;
+    bottom: 1px;
+    margin: 0;
+    display: none;
+}
+
+.row--renaming .row__rename {
+    display: flex;
+}
+
+.row--renaming .row__name {
+    visibility: hidden;
+}
+
+.row--renaming .row__tag {
+    visibility: hidden;
+}
+
+.row--renaming .row__score {
+    visibility: hidden;
+}
+
+/* While a row is dragged it leaves the layout flow and the code moves it with transform.position. */
+.row--dragging {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+.drop-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    background-color: rgb(230, 145, 15);
+}

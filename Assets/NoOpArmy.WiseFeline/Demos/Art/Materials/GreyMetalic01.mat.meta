@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 84c23edd1981a1f4398540124f61db7a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/Art/Materials/GreyMetalic01.mat
+  uploadId: 1017588

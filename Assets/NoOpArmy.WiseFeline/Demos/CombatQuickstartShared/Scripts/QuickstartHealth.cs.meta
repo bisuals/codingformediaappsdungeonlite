@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 31f21383449befc4cb6604dd74499fa5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartShared/Scripts/QuickstartHealth.cs
+  uploadId: 1017588

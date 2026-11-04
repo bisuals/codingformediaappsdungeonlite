@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 31d67bfede7c4354e8f1dc73cebd7eed
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/DataRecorder/Editor/nooparmy.wisefline.DataRecorder.Editor.asmdef
+  uploadId: 1017588

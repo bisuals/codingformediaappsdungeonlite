@@ -1,0 +1,159 @@
+/* Window chrome for the Wise Feline window: toolbar, the four columns and the hints.
+   Every size and color of the window lives here. The UXML carries no style attributes and the C#
+   code sets no style values, so this file and FieldView.uss are the only places to change the look.
+   Colors come from the Unity theme variables so that the light and the dark editor skin both work. */
+
+.is-hidden {
+    display: none;
+}
+
+.wf-root {
+    flex-grow: 1;
+}
+
+.wf-title {
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    margin-left: 4px;
+    margin-right: 8px;
+    max-width: 45%;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--unity-colors-default-text);
+}
+
+.wf-toolbar-toggle {
+    min-width: 92px;
+}
+
+.wf-toolbar-spacer {
+    flex-grow: 1;
+}
+
+.wf-split {
+    flex-grow: 1;
+}
+
+.wf-split--left {
+    min-width: 260px;
+}
+
+.wf-split--right {
+    min-width: 340px;
+}
+
+.wf-column {
+    flex-grow: 1;
+}
+
+.wf-column--sets {
+    min-width: 110px;
+}
+
+.wf-column--actions {
+    min-width: 140px;
+}
+
+.wf-column--considerations {
+    min-width: 140px;
+}
+
+.wf-column--inspector {
+    min-width: 190px;
+    padding-right: 6px;
+}
+
+.column-header {
+    font-size: 13px;
+    -unity-font-style: bold;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    color: var(--unity-colors-default-text);
+}
+
+.list-area {
+    flex-grow: 1;
+}
+
+.row-list {
+    flex-grow: 1;
+}
+
+/* The per column hint covers the list area and is only visible while that column is empty. */
+.column-hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    font-size: 11px;
+    padding: 8px;
+    opacity: 0.65;
+    color: var(--unity-colors-default-text);
+}
+
+.add-button {
+    height: 22px;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.content-area {
+    flex-grow: 1;
+}
+
+/* The empty state covers the columns instead of replacing them, so that the split views keep their
+   sizes and do not have to lay themselves out again every time the selection changes. */
+.empty-state {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    font-size: 13px;
+    padding: 24px;
+    background-color: var(--unity-colors-window-background);
+    color: var(--unity-colors-default-text);
+}
+
+.inspector-scroll {
+    flex-grow: 1;
+}
+
+.inspector-view {
+    flex-grow: 1;
+    padding: 4px;
+}
+
+.inspector-content {
+    flex-grow: 1;
+}
+
+.debug-extras {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top-width: 1px;
+    border-top-color: var(--unity-colors-window-border);
+}
+
+.debug-extras__header {
+    font-size: 11px;
+    -unity-font-style: bold;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    color: var(--unity-colors-default-text);
+}
+
+.debug-extras__value {
+    font-size: 11px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+    color: var(--unity-colors-default-text);
+}

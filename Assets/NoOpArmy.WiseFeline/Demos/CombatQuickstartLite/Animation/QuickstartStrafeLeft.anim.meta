@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73d5d9f849beda54c88cb5831a15f11c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartLite/Animation/QuickstartStrafeLeft.anim
+  uploadId: 1017588

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4f4635802a7e44d4ca74c6376399f954
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Den/Demo/Materials/DenDemoGround.mat
+  uploadId: 1017588

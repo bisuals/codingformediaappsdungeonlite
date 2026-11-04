@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff60ef1a151255a4aa8429e1f1f361a5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Den/BlackBoards/Demo/DemoBoard.asset
+  uploadId: 1017588

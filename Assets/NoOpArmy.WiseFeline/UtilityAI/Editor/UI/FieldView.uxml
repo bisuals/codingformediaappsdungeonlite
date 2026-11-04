@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NoOpArmy.WiseFeline/UtilityAI/Editor/UI/FieldView.uss?fileID=7433441132597879392&amp;guid=44f0bae86d1b4ad4aac2e346a3aadaf8&amp;type=3#FieldView" />
+    <NoOpArmy.WiseFeline.FieldView name="fieldview" class="row">
+        <ui:VisualElement name="score-bar" picking-mode="Ignore" class="row__bar" />
+        <ui:Label name="label-name" text="Name" picking-mode="Ignore" class="row__name" />
+        <ui:Label name="label-tag" picking-mode="Ignore" class="row__tag is-hidden" />
+        <ui:Label name="label-score" text="0.000" picking-mode="Ignore" class="row__score" />
+        <ui:TextField name="field-name" class="row__rename" />
+    </NoOpArmy.WiseFeline.FieldView>
+</ui:UXML>

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 24a0744f0c90f5c4ab346e22d2bd936c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/Art/Materials/GreyRough.mat
+  uploadId: 1017588

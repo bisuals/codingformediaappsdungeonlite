@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="about-body" class="about__body">
+        <ui:Label name="version" class="about__title" />
+        <ui:Label text="Developer: Ashkan Saeidi Mazdeh" class="about__credit" />
+        <ui:Label text="Developer: Sina Ale Ali" class="about__credit" />
+        <ui:Label text="Demo Developer: Sajjad Kardani Moghadam" class="about__credit" />
+        <ui:Label text="Developer: Mostafa Khaleghi" class="about__credit" />
+        <ui:Label text="System Architect: Ashkan Saeidi Mazdeh" class="about__credit" />
+        <ui:Label text="3D Modeler: Masoud Zangi" class="about__credit" />
+        <ui:Label text="Website Designer: Negin Saeidi Mazdeh" class="about__credit" />
+        <ui:Label text="Graphics Designer: Parinaz Arjmand" class="about__credit" />
+        <ui:Label text="https://www.nooparmygames.com/" name="url" class="about__link" />
+        <ui:Label text="Special Thanks:&#10; Cameron Oltmann" class="about__credit about__thanks" />
+    </ui:VisualElement>
+    <ui:Button text="OK" name="ok" class="about__ok" />
+</ui:UXML>

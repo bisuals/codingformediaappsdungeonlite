@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4cfc5b26aaba4be4983c17ab72ba24d5
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/CombatQuickstartShared/Scripts/NoOpArmy.WiseFeline.CombatQuickstart.asmdef
+  uploadId: 1017588

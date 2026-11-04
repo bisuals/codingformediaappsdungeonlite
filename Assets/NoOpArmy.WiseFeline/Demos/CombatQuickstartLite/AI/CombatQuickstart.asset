@@ -1,0 +1,747 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8140209956718447207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: PlayerDistance
+  m_EditorClassIdentifier: 
+  guid: 01f12d2577c74a1bac9f1c9878714f7c
+  Name: PlayerDistance
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 15
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Player
+  calculateOnXZPlane: 1
+  inverse: 1
+--- !u!114 &-7222181045203384371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9eb78d0223f2a46b1234a01073390b, type: 3}
+  m_Name: Attack
+  m_EditorClassIdentifier: 
+  guid: e20d8590f184ea34e9852225be753849
+  Name: Attack
+  _priority: 0
+  _isInterruptable: 1
+  forceInterruptLowerPriorityActions: 1
+  _weight: 1.5
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 7478401670255993410}
+  - {fileID: 5467931287955074891}
+  ChosenTarget: {fileID: 0}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 1
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Health
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: -2147483648
+      maxIntValue: 2147483647
+      floatValue: -6
+      minFloatValue: 0
+      maxFloatValue: 100
+      boolValue: 0
+      stringValue: 
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  OnStartAnimationTrigger: Shoot
+  creationDelay: 0.4
+  objectToCreate: {fileID: 3743011740515966068, guid: 8b662aaa1f616034ba0142173a522679, type: 3}
+  objectCountToCreate: 3
+  createAtTheSameTime: 0
+  isPositionRelative: 1
+  creationPosition: {x: 0, y: 1.2, z: 0.6}
+  shouldAdaptBrainRotation: 1
+--- !u!114 &-7051541676724526734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: HealthyEnoughToChase
+  m_EditorClassIdentifier: 
+  guid: 38ed7a9630bcf524886b2eb8c047b45f
+  Name: HealthyEnoughToChase
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 100
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.25
+      value: 0
+      inSlope: 0
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 0
+  keyName: Health
+--- !u!114 &-6818727178687018506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37039038c5f470043907fad20d033837, type: 3}
+  m_Name: PatrolBaseline
+  m_EditorClassIdentifier: 
+  guid: 5f540eba488b85f44a123dabf78594ce
+  Name: PatrolBaseline
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 1
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trueValue: 0.25
+  falseValue: 0
+  isTrue: 1
+--- !u!114 &-6710976398674195169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd81621ece8e8c345864b079264166e1, type: 3}
+  m_Name: Survival
+  m_EditorClassIdentifier: 
+  guid: 830137f038d88154a80976b72b3bba5c
+  Name: Survival
+  Behavior: {fileID: 11400000}
+  _actions:
+  - {fileID: 9210046772962625395}
+  - {fileID: 9209898596972414765}
+--- !u!114 &-3858288747026444661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: NotFullHealth
+  m_EditorClassIdentifier: 
+  guid: 7c4271e755f3e564eb5e8fc0d2bd70a0
+  Name: NotFullHealth
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 100
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.15
+      value: 0.97
+      inSlope: 3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Health
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee64cb2d03269334c8600221a75bfdbc, type: 3}
+  m_Name: CombatQuickstart
+  m_EditorClassIdentifier: 
+  _actionSets:
+  - {fileID: 7685528258158370751}
+  - {fileID: 2680243129008819717}
+  - {fileID: -6710976398674195169}
+  SelectedActionSet: {fileID: 0}
+  SelectedAction: {fileID: 0}
+--- !u!114 &592917556620987834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: Hurt
+  m_EditorClassIdentifier: 
+  guid: d0408d2e492c9154fbbf6f9c789f9650
+  Name: Hurt
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 100
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.75
+      value: 0.92
+      inSlope: 2.5
+      outSlope: 0.6
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 1
+  keyName: Health
+--- !u!114 &2680243129008819717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd81621ece8e8c345864b079264166e1, type: 3}
+  m_Name: Combat
+  m_EditorClassIdentifier: 
+  guid: 9756d0a93f015b741b222763d69427d4
+  Name: Combat
+  Behavior: {fileID: 11400000}
+  _actions:
+  - {fileID: 8801584138103118460}
+  - {fileID: -7222181045203384371}
+--- !u!114 &3269694224684375836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: AtCamp
+  m_EditorClassIdentifier: 
+  guid: 3c31c07ae6738284e83497974cddf798
+  Name: AtCamp
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 4
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.15
+      value: 0.9
+      inSlope: 3
+      outSlope: 0.3
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Camp
+  calculateOnXZPlane: 1
+  inverse: 1
+--- !u!114 &5467931287955074891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c035ec0f21742054e9e1ad79c22086ae, type: 3}
+  m_Name: HealthyEnoughToFight
+  m_EditorClassIdentifier: 
+  guid: 4ef5ca373fe940940bb76007166f5b2f
+  Name: HealthyEnoughToFight
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 100
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.25
+      value: 0
+      inSlope: 0
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  inverse: 0
+  keyName: Health
+--- !u!114 &5835647951337875582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ec8bf328c4ff7428cedf8c5f3c8987, type: 3}
+  m_Name: Patrol
+  m_EditorClassIdentifier: 
+  guid: 019052187cb3b484c89b13ddcce4e6ca
+  Name: Patrol
+  _priority: 0
+  _isInterruptable: 1
+  forceInterruptLowerPriorityActions: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: -6818727178687018506}
+  ChosenTarget: {fileID: 0}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: -2147483648
+      maxIntValue: 2147483647
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      stringValue: 
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  OnStartAnimationTrigger: Walk
+  gameObjectKeyName: PatrolPoints
+  FinishAfterOneCycle: 0
+--- !u!114 &7478401670255993410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58869e6c6a1fde746a896586198890b2, type: 3}
+  m_Name: PlayerAdjacent
+  m_EditorClassIdentifier: 
+  guid: f18cd1a9437bae749a55fcc22083d7d2
+  Name: PlayerAdjacent
+  instantiatePerAgent: 1
+  NeedTarget: 0
+  minRange: 0
+  maxRange: 3.5
+  ResponseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 4
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 0.95
+      inSlope: 1
+      outSlope: 0.2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyName: Player
+  calculateOnXZPlane: 1
+  inverse: 1
+--- !u!114 &7685528258158370751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd81621ece8e8c345864b079264166e1, type: 3}
+  m_Name: Patrol
+  m_EditorClassIdentifier: 
+  guid: 8b5ddfdb6869e4545a79977f255be21c
+  Name: Patrol
+  Behavior: {fileID: 11400000}
+  _actions:
+  - {fileID: 5835647951337875582}
+--- !u!114 &8801584138103118460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: Chase
+  m_EditorClassIdentifier: 
+  guid: ec699d0c1b86f4f408ec96dc402202cb
+  Name: Chase
+  _priority: 0
+  _isInterruptable: 1
+  forceInterruptLowerPriorityActions: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: -8140209956718447207}
+  - {fileID: -7051541676724526734}
+  ChosenTarget: {fileID: 0}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: -2147483648
+      maxIntValue: 2147483647
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      stringValue: 
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  OnStartAnimationTrigger: Run
+  gameObjectKeyName: Player
+--- !u!114 &9209898596972414765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd740b72cd49414db1441be405ebf60, type: 3}
+  m_Name: Rest
+  m_EditorClassIdentifier: 
+  guid: 4de4e519c82bec642bbf06be9224a402
+  Name: Rest
+  _priority: 0
+  _isInterruptable: 1
+  forceInterruptLowerPriorityActions: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 3269694224684375836}
+  - {fileID: -3858288747026444661}
+  ChosenTarget: {fileID: 0}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 3
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: Health
+        keyType: 2
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: -2147483648
+      maxIntValue: 2147483647
+      floatValue: 10
+      minFloatValue: 0
+      maxFloatValue: 100
+      boolValue: 0
+      stringValue: 
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  OnStartAnimationTrigger: Rest
+  StopMoving: 1
+--- !u!114 &9210046772962625395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea0d54c45bf5c43a09965551fbcde4, type: 3}
+  m_Name: Retreat
+  m_EditorClassIdentifier: 
+  guid: 0908e1cfdcc3e4647ac2bc6eb65d97ad
+  Name: Retreat
+  _priority: 0
+  _isInterruptable: 1
+  forceInterruptLowerPriorityActions: 1
+  _weight: 1
+  _maxTargetCount: 5
+  _useMomentumOnTarget: 0
+  _considerations:
+  - {fileID: 592917556620987834}
+  ChosenTarget: {fileID: 0}
+  changerStartingDelayInSeconds: 0
+  forceUpdateTargetsOnFinish: 0
+  ResetChangerOnStart: 0
+  changer:
+    changeType: 0
+    delayInSeconds: 0
+    change:
+      key:
+        keyName: 
+        keyType: 0
+      addInsteadOfSet: 1
+      multiplyByDeltaTimeForAdds: 1
+      vectorValue: {x: 0, y: 0, z: 0}
+      intValue: 0
+      minIntValue: -2147483648
+      maxIntValue: 2147483647
+      floatValue: 0
+      minFloatValue: -3.4028235e+38
+      maxFloatValue: 3.4028235e+38
+      boolValue: 0
+      stringValue: 
+      gameObjectValue: {fileID: 0}
+      unityObjectValue: {fileID: 0}
+    maxExecutionCount: 0
+  OnStartAnimationTrigger: Run
+  gameObjectKeyName: Camp

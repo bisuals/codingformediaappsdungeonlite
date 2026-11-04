@@ -1,0 +1,51 @@
+/*
+    Styles for the reusable debug drawing elements, ScoreSparkline and ResponseCurvePreview.
+
+    The elements add this stylesheet to themselves when they are constructed, so nothing has to
+    reference it from a UXML file. Every color is a Unity theme variable, which means the elements
+    read correctly on both the dark and the light editor skin. Selectors are class based only, so
+    the elements can be renamed or nested without breaking the styling.
+
+    The colors are exposed as USS custom properties. Anything which uses these elements can
+    override them in its own stylesheet, for example to give the winning action a different line
+    color from the rest.
+*/
+
+.wf-score-sparkline {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 48px;
+    min-height: 32px;
+    color: var(--unity-colors-highlight-background);
+    --wf-sparkline-line: var(--unity-colors-highlight-background);
+    --wf-sparkline-baseline: var(--unity-colors-window-border);
+}
+
+.wf-response-curve-preview {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 96px;
+}
+
+.wf-response-curve-preview__canvas {
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    min-height: 64px;
+    color: var(--unity-colors-highlight-background);
+    --wf-curve-line: var(--unity-colors-highlight-background);
+    --wf-curve-axis: var(--unity-colors-window-border);
+    --wf-curve-marker: var(--unity-colors-default-text);
+    --wf-curve-guide: var(--unity-colors-window-border);
+}
+
+.wf-response-curve-preview__caption {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: var(--unity-colors-default-text);
+    -unity-text-align: middle-left;
+}

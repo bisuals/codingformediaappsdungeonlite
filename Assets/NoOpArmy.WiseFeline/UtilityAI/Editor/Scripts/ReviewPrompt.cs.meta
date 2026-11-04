@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 46c18fe5ff3541debfea4a59ae7918cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/UtilityAI/Editor/Scripts/ReviewPrompt.cs
+  uploadId: 1017588

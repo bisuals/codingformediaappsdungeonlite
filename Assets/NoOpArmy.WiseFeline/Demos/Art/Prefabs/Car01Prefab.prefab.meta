@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9d1b57f4830447147a8dee42f2666239
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249840
+  packageName: "NPC AI & Decision Making \u2014 Wise Feline Utility AI (Lite)"
+  packageVersion: 1.51.0
+  assetPath: Assets/NoOpArmy.WiseFeline/Demos/Art/Prefabs/Car01Prefab.prefab
+  uploadId: 1017588
