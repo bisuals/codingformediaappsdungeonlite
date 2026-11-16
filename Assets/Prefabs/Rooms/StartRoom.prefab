@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.4995263, y: 0.5004732, z: -0.49952644, w: 0.5004732}
   m_LocalPosition: {x: -0.034, y: 1.32, z: -0.007}
-  m_LocalScale: {x: 1.9361807, y: 2.305274, z: 0.217155}
+  m_LocalScale: {x: 3.6367435, y: 3.006473, z: 0.217155}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68380805294433611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -272,6 +272,7 @@ MonoBehaviour:
   upgradeType: 1
   upgradeCost: 200
   upgradeName: Vampiric Leech (steal enemy health)
+  interactionDistance: 3
 --- !u!1 &1063911297576008930
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   upgradeType: 0
   upgradeCost: 50
   upgradeName: Health Boost (+25 HP)
+  interactionDistance: 3
 --- !u!1 &2361698528554990955
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +470,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1, y: 0.6, z: 0}
-  m_LocalScale: {x: 2, y: 1.3, z: 0.2}
+  m_LocalScale: {x: 4.1392, y: 1.3, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -488,7 +490,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2361698528554990955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -580,7 +582,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: -0.02}
-  m_LocalScale: {x: 0.2, y: 0.3, z: 0.2}
+  m_LocalScale: {x: 0.36820257, y: 0.3, z: 0.4399}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -618,7 +620,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 97e28071319fabb4bb15f0bfa9b6fecb, type: 2}
+  - {fileID: 2100000, guid: 458e29bcabb4aeb4ea02c37751b65e1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -691,8 +693,8 @@ Transform:
   m_GameObject: {fileID: 5058459217608804607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.018, y: 0.492, z: 0.899}
-  m_LocalScale: {x: 1.6990999, y: 1.0502399, z: 0.1}
+  m_LocalPosition: {x: 0.018, y: 0.492, z: 1.922}
+  m_LocalScale: {x: 1.9879467, y: 1.0502399, z: 0.128}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -790,8 +792,8 @@ Transform:
   m_GameObject: {fileID: 7915760479108321587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.146839, y: 0.6078001, z: -0.84402}
-  m_LocalScale: {x: 2.1835368, y: 1.30293, z: 0.217155}
+  m_LocalPosition: {x: 0.01, y: 0.6078001, z: -1.96}
+  m_LocalScale: {x: 2.0643156, y: 1.30293, z: 0.217155}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -811,7 +813,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7915760479108321587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -903,7 +905,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1, y: 0.6, z: 0}
-  m_LocalScale: {x: 2, y: 1.3, z: 0.2}
+  m_LocalScale: {x: 4.0006, y: 1.3, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4376793541021628029}
@@ -923,7 +925,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8649372335273075987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

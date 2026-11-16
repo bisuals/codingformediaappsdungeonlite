@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.113
   m_LinearFogStart: 0
@@ -368,6 +368,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &287064203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287064193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3d4747aefd0884ca98e705b850000a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
+  camera: {fileID: 330585545}
+  characterController: {fileID: 287064208}
+  walkSpeed: 4
+  sprintSpeed: 6
+  viewSensitivity: 120
+  jumpForce: 5
+  bobbingSpeed: 0.24
+  bobbingAmount: 0.06
+--- !u!143 &287064208 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 8106729196923275049, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
+  m_PrefabInstance: {fileID: 7590414935483352263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &292882818
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,13 +597,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.013741953, y: -0.09172485, z: 0.0017129717, w: 0.9956881}
-  m_LocalPosition: {x: 0.4, y: 2.19, z: -2.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.064358145, y: 0.034635603, z: 0.0016673256, w: 0.9973242}
+  m_LocalPosition: {x: 0.038, y: 0.572, z: -0.074}
+  m_LocalScale: {x: 0.685751, y: 0.7124275, z: 0.7258468}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 1.586, y: -10.526, z: 0.051}
+  m_Father: {fileID: 122961957}
+  m_LocalEulerAnglesHint: {x: 7.369, y: 4.007, z: 0.45}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,7 +1801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886529903557104221, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 2886529903557104221, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1814,10 +1839,18 @@ PrefabInstance:
       propertyPath: interactionRange
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 5575896854812707119, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4559606399605715935, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2886529903557104221, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 330585546}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2281516146762256612, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 287064203}
     - targetCorrespondingSourceObject: {fileID: 2281516146762256612, guid: d36abb3ba9a3b4c4fb42bc2012c4bf3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 287064202}
@@ -1826,7 +1859,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 7590414935483352263}
   - {fileID: 410087041}
   - {fileID: 832575519}
